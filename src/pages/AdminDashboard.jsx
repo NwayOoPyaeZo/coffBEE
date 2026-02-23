@@ -19,6 +19,7 @@ import {
 import BackButton from '../components/BackButton'
 import CustomerDetailsModal from '../components/CustomerDetailsModal'
 import OrderDetailsModal from '../components/OrderDetailsModal'
+import BrandBee from '../components/BrandBee'
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
 
@@ -278,10 +279,11 @@ function AdminDashboard({ user }) {
       >
         <div className="flex items-center justify-between border-b border-gray-200 p-6 dark:border-honey/10">
           <div>
-            <h1 className="font-serif text-2xl font-black tracking-widest text-honey-deep uppercase dark:text-white">
+            <h1 className="flex items-center gap-2 font-serif text-2xl font-black tracking-widest text-honey-deep uppercase dark:text-white">
+              <BrandBee size={28} className="text-honey animate-float" />
               Coffbee
             </h1>
-            <p className="mt-1 text-xs text-gray-500">Admin Portal</p>
+            <p className="mt-1 pl-9 text-xs text-gray-500">Admin Portal</p>
           </div>
 
           <button

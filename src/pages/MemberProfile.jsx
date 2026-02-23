@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Award, Clock, ExternalLink, QrCode, Receipt, Share2 } from 'lucide-react'
+import { Clock, ExternalLink, Hexagon, QrCode, Receipt, Share2 } from 'lucide-react'
 import BackButton from '../components/BackButton'
 import OrderTracker from '../components/OrderTracker'
 
@@ -119,7 +119,7 @@ function MemberProfile({ user }) {
                   {points} <span className="text-lg font-light text-white/60">drops</span>
                 </p>
               </div>
-              <Award className="text-honey" size={40} />
+              <Hexagon className="fill-honey/20 text-honey" size={40} />
             </div>
 
             <div className="mb-4">

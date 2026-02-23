@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { CreditCard, MapPin, X } from 'lucide-react'
 import { useCart } from '../context/useCart'
+import BrandBee from './BrandBee'
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
 
@@ -135,9 +136,16 @@ function CheckoutCard({ isOpen, onClose, user, onCheckoutSuccess }) {
 
         {step === 'processing' && (
           <div className="flex flex-col items-center justify-center p-12 text-center">
-            <div className="mb-4 h-16 w-16 animate-spin rounded-full border-t-4 border-b-4 border-honey" />
-            <h2 className="text-xl font-bold text-honey-deep dark:text-white">Processing Payment...</h2>
-            <p className="mt-2 text-gray-500 dark:text-gray-400">Connecting to secure gateway</p>
+            <div className="relative mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-honey/20 text-honey-deep shadow-inner dark:text-honey">
+              <BrandBee size={40} className="animate-buzz" />
+              <div className="absolute top-8 -left-4 h-1 w-6 animate-pulse rounded-full bg-honey/40" />
+              <div
+                className="absolute top-12 -left-2 h-1 w-4 animate-pulse rounded-full bg-honey/40"
+                style={{ animationDelay: '0.2s' }}
+              />
+            </div>
+            <h2 className="text-xl font-bold text-honey-deep dark:text-white">Connecting to Hive...</h2>
+            <p className="mt-2 text-gray-500 dark:text-gray-400">Processing your payment securely</p>
           </div>
         )}
       </div>

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Coffee, Moon, Sun, Menu, ShoppingBag, X } from 'lucide-react'
+import { Moon, Sun, Menu, ShoppingBag, X } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/useCart'
+import BrandBee from './BrandBee'
 
 function NavBar({ user, onOpenLogin, onOpenCart, onLogout }) {
   const [darkMode, setDarkMode] = useState(false)
@@ -18,8 +19,8 @@ function NavBar({ user, onOpenLogin, onOpenCart, onLogout }) {
 
   const navLinks = [
     { name: 'Menu', href: '#menu' },
-    { name: 'Story', href: '#story' },
-    { name: 'Visit', href: '#visit' },
+    { name: 'Our Story', href: '#story' },
+    { name: 'Visit Us', href: '#visit' },
   ]
 
   return (
@@ -35,7 +36,7 @@ function NavBar({ user, onOpenLogin, onOpenCart, onLogout }) {
             aria-label="Coffbee logo"
           >
             <div className="rounded-lg bg-honey p-2">
-              <Coffee className="text-honey-deep" size={24} />
+              <BrandBee className="text-honey-deep" size={24} />
             </div>
             <span className="text-2xl font-bold tracking-tighter text-honey-deep dark:text-honey">
               COFF<span className="text-honey dark:text-white">BEE</span>
@@ -225,7 +226,7 @@ function NavBar({ user, onOpenLogin, onOpenCart, onLogout }) {
 
         {/* Decorative Honeybee Element */}
         <div className="absolute bottom-10 left-8 opacity-10 dark:opacity-20">
-          <Coffee size={120} className="text-honey-deep dark:text-honey" />
+          <BrandBee size={120} className="text-honey-deep dark:text-honey" />
         </div>
       </div>
     </>

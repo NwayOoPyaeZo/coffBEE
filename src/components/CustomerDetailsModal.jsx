@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Award, Mail, Receipt, X } from 'lucide-react'
+import { Hexagon, Mail, Receipt, X } from 'lucide-react'
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
 
@@ -74,7 +74,7 @@ function CustomerDetailsModal({ isOpen, onClose, customer }) {
           <div className="rounded-2xl border border-honey/20 bg-honey/10 p-4">
             <p className="mb-1 text-xs font-bold text-honey-deep/70 uppercase dark:text-honey/70">Honey Drops</p>
             <div className="flex items-center gap-2 text-2xl font-black text-honey-deep dark:text-white">
-              <Award className="text-honey" size={24} />
+              <Hexagon className="fill-honey/20 text-honey" size={24} />
               {customer.honey_points}
             </div>
           </div>
