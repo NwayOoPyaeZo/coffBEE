@@ -4,8 +4,8 @@ function Preloader() {
   return (
     <div className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-honey-light dark:bg-honey-deep">
       <div className="relative">
-        <div className="absolute -top-20 left-1/2 h-16 w-16 -translate-x-1/2 animate-drip">
-          <div className="h-full w-full rounded-full rounded-t-none rounded-b-[50px] bg-honey shadow-lg shadow-honey/50" />
+        <div className="absolute -top-24 left-1/2 h-24 w-16 -translate-x-1/2 animate-drip">
+          <div className="honey-drop relative h-full w-full overflow-hidden rounded-[58%_58%_62%_62%/56%_56%_44%_44%]" />
         </div>
 
         <div className="relative flex h-24 w-24 animate-pulse items-center justify-center rounded-3xl bg-white shadow-2xl dark:bg-honey-deep/50">
