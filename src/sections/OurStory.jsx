@@ -20,7 +20,32 @@ function OurStory() {
 
           <div className="relative w-full space-y-6 lg:w-1/2">
             <div className="absolute -top-12 right-0 text-honey/30 dark:text-honey/20">
-              <BrandBee size={80} className="animate-float" />
+                    <svg width={80} height={80} viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" className="animate-float">
+                      {/* Extra Tall Wings */}
+                      <g fill="#FDFDFD" stroke="#3E210C" strokeWidth="14" strokeLinecap="round">
+                        {/* Left Wing */}
+                        <path d="M140 260 C 10 200, 50 -20, 155 150" transform="rotate(-15, 140, 210)" />
+                        {/* Right Wing */}
+                        <path d="M260 260 C 390 200, 370 -20, 245 150" transform="rotate(15, 260, 210)" />
+                      </g>
+
+                      {/* Lower Body Segment */}
+                      <path d="M120 220 C 120 340, 280 340, 280 220" 
+                            fill="#C59631" stroke="#3E210C" strokeWidth="15" strokeLinecap="round" />
+                      {/* Main Head (Original Bean Shape) */}
+                      <path d="M110 185 C 110 80, 290 80, 290 185 C 290 280, 110 280, 110 185" 
+                            fill="#E8BA4F" stroke="#3E210C" strokeWidth="15" strokeLinejoin="round" />
+
+                      {/* Face Details */}
+                      <g fill="#3E210C">
+                        <circle cx="170" cy="180" r="24" />
+                        <circle cx="170" cy="170" r="8" fill="white" />
+                        <circle cx="235" cy="180" r="24" />
+                        <circle cx="235" cy="170" r="8" fill="white" />
+                        <path d="M140 235 Q 200 285, 265 235" 
+                              fill="none" stroke="#3E210C" strokeWidth="15" strokeLinecap="round" />
+                      </g>
+                    </svg>
             </div>
 
             <div className="inline-flex items-center gap-2 rounded-full bg-honey/20 px-3 py-1 text-sm font-bold tracking-wider text-honey-deep uppercase backdrop-blur-sm dark:text-honey">
